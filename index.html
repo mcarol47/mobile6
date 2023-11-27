@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>o meu 2 site</title>
+
+    <style>
+        body {
+            background-color: rgb(17, 25, 130); 
+            font-size: 15px;
+            font-style: normal;
+            margin: 1px;
+            padding: 1px;
+        }
+
+        h1 {
+            text-align: center; 
+			color: rgb(64, 66, 185);
+        }
+
+        p {
+            text-align: center; 
+			color: whitesmoke;
+            font-family: cursive;
+            
+        }
+		
+        h2 {
+            text-align: center; 
+			color: rgb(127, 138, 182);
+        }
+        form {
+            text-align: center;
+            color: whitesmoke;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+          
+            body {
+                font-size: 12px; 
+            }
+            h1, h2 {
+                font-size: 22px; 
+            }
+        }
+        img {
+            display: inline-flexbox; 
+            margin: 25 auto; 
+			border-radius: 175px;
+background: linear-gradient(145deg, #2d5c9e, #6d84a2);
+
+        }
+		
+        form {
+            text-align: center; /* Centralizar o formulário */
+			color: whitesmoke
+        }
+		
+		
+
+    </style>
+</head>
+
+<body>
+    <h1>Prazer, sou a Carolina</h1> 
+    <p>Tenho 18 anos e moro em Vila do Conde</p>
+    <p>Tenho interesse no ramo da publicidade, fotografia e produção criativa de vídeos e sou dançarina nos meus tempos livres.</p> 
+    <p>Recentemente integrada no mundo da comunicação audiovisual e multimédia, pretendo evoluir e concluir esta licenciatura da melhor forma possível.</p> 
+	
+	<br> 
+   
+	<div style="text-align: center;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeZbfkq-RojfwNRp_cZ2d6H_JjZF0Q5jpesg&usqp=CAU" 
+         height="130px"
+         width="130px"
+		 style="margin-right: 10px;"> 
+	
+	  <img src="https://i.pinimg.com/236x/53/cb/fa/53cbfa0d88e3bd235365148b5bb40864.jpg"  
+         height="130px"
+         width="130px"
+		   style="margin-left: 10px;">
+	</div>
+	
+    </form>
+
+
+
+</body> 
+
+    <title>Formulário Simples</title>
+    <h2>E tu? O que gostas de fazer? Partilha-o!</h2>
+    <form action="processar_formulario.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        </select><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
